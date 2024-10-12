@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <img id="seasonImage" src="https://img.freepik.com/free-vector/hand-drawn-flat-design-seasons-collection_52683-74610.jpg" alt="Seasonal Image" width="40%">
+ <br>
+    <button onclick="ChangeImage('Summer')">Summer</button>
+    <button onclick="ChangeImage('Winter')">Winter</button>
+    <button onclick="ChangeImage('Monsoon')">Monsoon</button>
+<script>
+    function ChangeImage(season){
+        const image = document.getElementById('seasonImage');
+        if (season === 'Summer'){
+            image.src = 'summer.jpg';
+            imag.alt = 'summer image';
+        } else if (season === 'Winter') {
+            image.src = 'https://images.pexels.com/photos/688660/pexels-photo-688660.jpeg?auto=compress&cs=tinysrgb&w=600'; 
+            image.alt = 'Winter Image';
+        } else if (season === 'Monsoon') {
+            image.src = 'https://images.pexels.com/photos/2745226/pexels-photo-2745226.jpeg?auto=compress&cs=tinysrgb&w=600'; 
+            image.alt = 'Monsoon Image';
+        }
+    }
+</script>
+</body>
+</html>
